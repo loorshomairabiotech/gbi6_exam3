@@ -1,7 +1,7 @@
 ---
 title: "Bioinformática- GBI6"
 subtitle: "EXAMEN FINAL - 2022II"
-author: "APELLIDO, Nombre"
+author: "Loor, Shomaira"
 date: "`r Sys.Date()`"
 output:
   html_document:
@@ -451,7 +451,12 @@ genelabels <- rowAnnotation(
         gp = gpar(fontsize = 10,  fontface = 'bold')))
 ## Clusters 
 
-pamClusters <- cluster::pam(heat, k = 5) # pre-select k = 4 centers
+pamClusters <- cluster::pam(heat, k = 4) # pre-select k = 4 centers
+###############################################################
+###############################################################
+##### EXISTE ERROR EN pamCLUSTER, no se puede guardar html #####
+################################################################
+################################################################
   pamClusters$clustering <- paste0('Cluster ', pamClusters$clustering)
 
   # fix order of the clusters to have 1 to 4, top to bottom
